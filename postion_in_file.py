@@ -10,7 +10,7 @@ def custom_write(file_name, strings):
     while True:
         key = [0]*2
         key[0] = i+1
-        key[1] = file.tell() + i
+        key[1] = file.tell()
         line = file.readline()
         if line == "":
             break
